@@ -142,3 +142,45 @@ footer {
   font-size: 0.9rem;
   color: #9ca3af;
 }
+
+/* Mobile-specific override */
+@media (max-width: 768px) {
+    .side-banner {
+        display: none;
+    }
+
+    .main-content {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header {
+        font-size: 0.25rem;
+    }
+
+    body {
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 0.65rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ul li {
+        margin-bottom: 0.2rem;
+        font-size: 0.75rem;
+    }
+}
