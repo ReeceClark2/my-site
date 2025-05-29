@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+html, body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0b1120;
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hero-portrait {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 4px solid #38bdf8;
+}
+
+/* Background animation */
+.stars-background {
+  position: fixed;
+  inset: 0;
+  background: url('stars_bg.png') repeat;
+  opacity: 0.2;
+  z-index: -1;
+  animation: scroll 120s linear infinite;
+}
+
+@keyframes scroll {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+
+/* Layout */
+.page-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.side-banner {
+  width: 15%;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.left-banner {
+  background-image: url('star-banner.gif');
+}
+
+.right-banner {
+  background-image: url('star-banner.gif');
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #93c5fd;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+}
+
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  margin: 0 0.75rem;
+  font-weight: 600;
+  color: #60a5fa;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a.active {
+  border-bottom: 2px solid #3b82f6;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #e0f2fe;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
